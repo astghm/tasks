@@ -3,8 +3,8 @@ import argparse
 
 def main():
 
-    ACCESS_KEY_ID = ''
-    ACCESS_SECRET_KEY = ''
+    ACCESS_KEY_ID = 'AKIAUTJ2H5B6J55J4GFI'
+    ACCESS_SECRET_KEY = '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'
 
     s3 = boto3.client('s3',
                       aws_access_key_id=ACCESS_KEY_ID,
@@ -16,9 +16,6 @@ def main():
     args = parser.parse_args()
 
     s3.upload_file(args.file_name, args.bucket_name, args.file_name)
-
-    upload_s3(args.bucket_name, args.file_name)
-
 
 if __name__ == '__main__':
     main()
