@@ -3,8 +3,8 @@ import argparse
 
 def main():
 
-    ACCESS_KEY_ID = 'AKIAUTJ2H5B6J55J4GFI'
-    ACCESS_SECRET_KEY = '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'
+    ACCESS_KEY_ID = ''
+    ACCESS_SECRET_KEY = ''
 
     s3 = boto3.client('s3',
                       aws_access_key_id=ACCESS_KEY_ID,
