@@ -17,6 +17,7 @@ def main():
 
     s3.upload_file(args.file_name, args.bucket_name, args.file_name)
 
+
 if __name__ == '__main__':
     main()
 
